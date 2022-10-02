@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+img{
+    max-width: 200px;
+}
+.icon{
+    height: 24px;
+    width: 24px;
+}
+
+header{
+    background-color: #FEF2F2;
+}
+input:checked  ~ ul{
+    display:grid;
+    grid-template-rows: 1rs;
+    visibility:visible
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+}
+input {
+    display: none;
+  }
+
+.navbar--show{
+
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    user-select: none;
+    z-index: 10;
+    
+}
+
+
+.nabvar--contenedor{
+    display: flex;
+    padding: 2rem;
+    list-style: none;
+    gap: 1rem;
+    justify-content: space-evenly;
+
+    position: absolute;
+    right: 0;
+    top: 50;
+    visibility:hidden
+}
+
+
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icons--header{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.icon--header{
+    background-size: contain;
+    background-color: #F26440;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #FFFFFF;
+
+}
+
+.contenedor--header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.container--img{
+    text-align: center;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #286F6C;
+    position: absolute;
+
+    top: 0;
+    z-index: 0;
+}
+.img--portada{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+.subtitle{
+    color: #286F6C;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.acerca--de--mi{
+    padding: 1rem;
+    color: #ADADAD;
+    font-size: 16px;
+    font-style:normal;
+}
+.abilities{
+    position: relative;
+}
+.big-circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #286F6C;
+    position: absolute;
+
+    top: 0;
+    left: -1rem;
+    z-index: -1;
+}
+.small-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #F26440;
+    position: absolute;
+    
+
+    top: 2rem;
+    left: -1rem;
+    z-index: -1;
+}
+.sub-white{
+    color: white;
+}
+.skills{
+
+    display: flex;
+
+    margin: 1rem auto;
+    width: 95vw;
+    padding: 1rem;
+    gap: 1rem;
+
+    overflow-x: scroll;
+    min-width: 350px;
+    max-width: 500px;
+
+
+}
+.skill{
+    background-color: #FEF2F2;
+    display: grid;
+    width: 45vh;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 1fr 3fr;
+
+    min-width: 185px;
+    max-width: 500px;
+
+    max-height: 240px;
+    overflow-y: scroll;
+}
+.logo--skill{
+    width: 20px;
+    height: 30px;
+    padding: 1rem;
+}
+
+.title-skill{
+    padding: 1rem;
+    font-size: 24px;
+}
+.skill-text{
+    grid-column: 1/-1;
+    font-size: 18px;
+}
+
+
+.experiencia{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+}
+.experiencia--contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.Experiencia-time{
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .nabvar--contenedor{
+        visibility: visible;
+    }
+    .icon--navbarç{
+        visibility: hidden;
+    }
+}
