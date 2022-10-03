@@ -4,6 +4,12 @@
     box-sizing: border-box;
     
 }
+body{
+    background-color: white;
+}
+.section{
+    width: 100vh;
+}
 img{
     max-width: 200px;
 }
@@ -35,7 +41,8 @@ label>img{
 .nabvar--contenedor{
     position: absolute;
     background: white;
-    width: 80%;
+    width: 100vh;
+    height: 100vh;
     top: 80px;
     min-height: calc( 100vh - 80px );
     padding: 1.5rem 1rem;
@@ -44,7 +51,7 @@ label>img{
     align-items: center;
     color: white;
     display: flex;
-    left: -100%;
+    left: -100vh;
     transition: left .5s linear;
     z-index: 10;
 
@@ -57,9 +64,6 @@ label>img{
 #menu:checked ~ .nabvar--contenedor{
     left: 0;
 }
-.body{
-    width: 100vh;
-}
 .title{
     font-size: 50px;
     font-weight: bold;
@@ -67,8 +71,9 @@ label>img{
 }
 
 .icons--header{
+    width: 80vh;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: center;
     list-style: none;
     
@@ -101,7 +106,7 @@ label>img{
     text-align: center;
     display: flex;
     height: 350px;
-    width: 100%;
+    width: 100vh;
     justify-content: center;
     position: relative;
 }
@@ -140,24 +145,27 @@ label>img{
     position: relative;
 }
 .big-circle{
-    width: 400px;
-    height: 400px;
+    width: 95vh;
+    height: 95vh;
     border-radius: 50%;
     background-color: #286F6C;
     position: absolute;
 
+    max-width: 500px;
+    max-height: 500px;
     top: 0;
     left: -1rem;
     z-index: -1;
 }
 .small-circle{
-    width: 200px;
-    height: 200px;
+    width: 40vh;
+    height: 40vh;
     border-radius: 50%;
     background-color: #F26440;
     position: absolute;
     
-
+    max-width: 200px;
+    max-height: 200px;
     top: 2rem;
     left: -1rem;
     z-index: -1;
@@ -170,12 +178,12 @@ label>img{
     display: flex;
 
     margin: 1rem auto;
-    width: 95vw;
+    width: 95vh;
     padding: 1rem;
     gap: 1rem;
 
     overflow-x: scroll;
-    min-width: 350px;
+    min-width: 500px;
     max-width: 500px;
 
 
@@ -184,13 +192,14 @@ label>img{
     background-color: #FEF2F2;
     display: grid;
     width: 45vh;
+    height: 60vh;
     grid-template-columns: 1fr 3fr;
     grid-auto-rows: 1fr 3fr;
 
-    min-width: 185px;
+    min-width: 215px;
     max-width: 500px;
 
-    max-height: 240px;
+    max-height: 300px;
     overflow-y: scroll;
 }
 .logo--skill{
@@ -209,7 +218,7 @@ label>img{
 }
 
 
-.experiencia{
+.experiencia--skills{
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -229,9 +238,11 @@ label>img{
     background-color: #286F6C;
     width: 100vh;
     height: 200px;
+    margin-top: 3rem;
 }
-
-
+.contacto{
+    background-color: white;
+}
 @media screen and (min-width: 600px) {
     .nabvar--contenedor{
         visibility: visible;
