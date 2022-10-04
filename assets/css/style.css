@@ -2,10 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 body{
     background-color: white;
+}
+a:link{
+    text-decoration: none;
+    color: black;
 }
 .section{
     width: 100vh;
@@ -234,20 +237,100 @@ label>img{
     text-align: center;
 }
 
-.portafolio{
-    background-color: #286F6C;
-    width: 100vh;
-    height: 200px;
-    margin-top: 3rem;
-}
+
 .contacto{
     background-color: white;
 }
+
+.text-white{
+    padding: 1rem;
+    color: white;
+}
+
+.portafolio{
+    background-color: #286F6C;
+    width: 100vh;
+    height: 60vh;
+    margin-top: 3rem;
+    position: relative;
+
+
+    margin: 1rem auto 2.5rem auto;
+}
+.project{
+    width: 280px;
+    height: 230px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+    line-height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.Fitness-app{
+    left: 25vh;
+    top: -50px;
+    z-index: 1;
+}
+.Management-app{
+    left: 25vh;
+    bottom: -50px;
+    z-index: 1;
+}
+.portafolio-text{
+    width: 45%;
+    height: 50%;
+    right: 0;
+    position: absolute;
+}
 @media screen and (min-width: 600px) {
-    .nabvar--contenedor{
-        visibility: visible;
+    .Home{
+        width: 100%;
+        height: 400px;
     }
-    .icon--navbarç{
-        visibility: hidden;
+    label>img{
+        display: none;
+    }
+    .nabvar--contenedor{
+        position: relative;
+        background-color: #FEF2F2;
+        width: 100%;
+        height: auto;
+        top: 0;
+        min-height: auto;
+        padding: 0;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: black;
+
+        left: 0;
+        transition: none;
+        z-index: 1;
+    
+    }
+    .contenedor--header{
+        display: flex;
+        flex-direction: row;
+    }
+    .container--header-uno{
+        width: 30%;
+        margin-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circle{
+        width: 290px;
+        height: 290px;
+    }
+    .img--portada{
+        max-width: 225px;
+    }
+    .Acerca-de-mi{
+        margin: 0 3rem;
     }
 }
