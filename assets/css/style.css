@@ -2,14 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: white;
 }
-a:link{
-    text-decoration: none;
+a{
     color: black;
 }
+a:link{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+
 .section{
     width: 100vh;
 }
@@ -65,9 +71,9 @@ label>img{
 #menu:checked ~ .nabvar--contenedor{
     left: 0;
 }
-.title{
+h1{
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -102,11 +108,15 @@ label>img{
     gap: 2rem;
     
 }
-
+.container--header-uno{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .container--img{
     text-align: center;
     display: flex;
-    height: 350px;
+    height: 275px;
     width: 100vh;
     justify-content: center;
     position: relative;
@@ -131,13 +141,13 @@ label>img{
 .subtitle{
     color: #286F6C;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: left;
     padding: 1rem;
     padding-top: 4rem;
 }
 
-.acerca--de--mi{
+.info-personal{
     padding: 1rem;
     color: #ADADAD;
     font-size: 16px;
@@ -174,6 +184,7 @@ label>img{
 }
 .sub-white{
     color: white;
+    font-weight: 500;
 }
 .skills{
 
@@ -195,6 +206,7 @@ label>img{
     display: grid;
     width: 45vh;
     height: 60vh;
+    gap: 1rem;
     grid-template-columns: 1fr 3fr;
     grid-auto-rows: 1fr 3fr;
 
@@ -205,24 +217,28 @@ label>img{
     overflow-y: scroll;
 }
 .logo--skill{
-    width: 20px;
-    height: 30px;
+    width: 55px;
+    height: 60px;
     padding: 1rem;
 }
 
 .title-skill{
     padding: 1rem;
     font-size: 24px;
+    font-weight: 400;
 }
 .skill-text{
     grid-column: 1/-1;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0.5rem;
 }
 
 
-.experiencia--skills{
+.experiencia-skills{
     display: flex;
     gap: 2rem;
+    margin-left: 2rem;
     flex-direction: column;
 
 }
@@ -234,8 +250,16 @@ label>img{
 
 .Experiencia-time{
     text-align: center;
+    margin-top: 25px;
 }
-
+.xp-txt>p{
+    font-weight: 300;
+    color: #ADADAD;
+    font-size: 15px;
+}
+.xp-txt>h4, .xp-txt ~ h4{
+    font-weight: 500;
+}
 
 .contacto{
     background-color: white;
@@ -255,21 +279,27 @@ label>img{
     flex-direction: column;
     align-items: center;
 
-    margin: 7rem 0;
+    margin: 8rem 0 6rem 0;
 }
 .project{
     width: 80%;
     height: 50%;
     border-radius: 8px;
     text-align: center;
+    padding-top: 30px;
 
     background-color: white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+
 }
 .project>img{
-    width: 80%;
-    height: 90%;
+    width: 70%;
+    height: 80%;
 }
-
+.project>h4{
+    text-align: center;
+    font-weight: 400;
+}
 .Fitness-app{
     position: absolute;
 
@@ -289,11 +319,14 @@ label>img{
 }
 
 .icon-footer{
+    background-size: contain;
     background-color: #F26440;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+
 }
 
 .contactos{
@@ -302,17 +335,39 @@ label>img{
     align-content: center;
     align-items: center;
     text-align: center;
-    gap: 10rem;
-    padding:0 20%;
+    gap: 6rem;
+    padding:2rem 20%;
     padding-bottom: 10rem;
+    position: relative;
 }
 .contact{
     width: 40%;
+    z-index: 1;
+}
+
+.contactos>div.circle{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    left: -50px;
+    z-index: 0;
+    background-color: rgb(215, 226, 225);
+}
+
+.contact-way{
+    color:#286F6C;
+    width: 100%;
+}
+.contact-way ~ p{
+    color: #ADADAD;
 }
 @media screen and (min-width: 600px) {
+    .section{
+        width: 100%;
+    }
     .Home{
         width: 100%;
-        height: 400px;
+        height: 390px;
     }
     label>img{
         display: none;
@@ -321,11 +376,9 @@ label>img{
         position: relative;
         background-color: #FEF2F2;
         width: 100%;
-        height: 80px;
+        max-height: 400px;
         top: 0;
-
-        padding: 0;
-
+        
         flex-direction: row;
 
         justify-content: space-evenly;
@@ -334,6 +387,9 @@ label>img{
         left: 0;
         transition: none;
         z-index: 0;
+    }
+    #menu{
+        width: 30%;
     }
     .contenedor--header{
         display: flex;
@@ -345,6 +401,7 @@ label>img{
     .container--header-uno{
         width: 30%;
         margin-left: 4rem;
+        gap: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -358,6 +415,77 @@ label>img{
         max-width: 225px;
     }
     .Acerca-de-mi{
+        width: calc(100% - 3rem);
         margin: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .Acerca-de-mi>div{
+        margin: 0 3rem;
+        width: 75%;
+    }
+    .abilities{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .abilities>h2{
+        align-self: flex-start;
+    }
+    .skills{
+
+        display: flex;
+    
+        margin: 1rem 0;
+        width: 70%;
+        padding: 1rem;
+        gap: 1rem;
+    
+        overflow-x: scroll;
+        min-width: 500px;
+        max-width: 1800px;
+    }
+    .experiencia-skills{
+        flex-direction: row;
+    
+    }
+    .experiencia--contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .project{
+        max-width: 40%;
+        height: 40vh;
+        
+    }
+    .project.Fitness-app{
+        left: 0;
+        margin-left: 3rem;
+    }
+    .project.Management-app{
+        right: 0;
+        margin-right: 3rem;
+    }
+    .portafolio{
+        height: 50vh;
+    }
+    .portafolio-text{
+        max-width: 40%;
+        height: 40vh;
+        margin: 2rem;
+        position: absolute;
+        right: 0;
+        margin-right: 6rem;
+        top: 0;
+    }
+
+    .contacto>h2{
+        margin-left: 5.5rem;
     }
 }
