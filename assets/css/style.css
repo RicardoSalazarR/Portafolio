@@ -452,6 +452,7 @@ h1{
     }
     .experiencia-skills{
         flex-direction: row;
+        justify-content: center;
     
     }
     .experiencia--contenedor{
