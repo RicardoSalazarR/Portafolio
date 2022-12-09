@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body> 
+
+<body>
     <header class="Home section">
         <nav class="navbar">
             <input type="checkbox" id="menu">
             <label for="menu" class="navbar--show">
-                <img src="./assets/Icons/menu.png" alt="" class="icon icon--navbar"> 
+                <img src="./assets/Icons/menu.png" alt="" class="icon icon--navbar">
             </label>
-    
+
             <ul class="nabvar--contenedor">
                 <li class="nav-item">
                     <a href="#">Home</a>
@@ -29,8 +31,7 @@
                     <a href="#">Mis habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a 
-                    href="#">Experiencia</a>
+                    <a href="#">Experiencia</a>
                 </li>
                 <li class="nav-item">
                     <a href="#">Portafolio</a>
@@ -45,13 +46,18 @@
                 <h1>Web Developer</h1>
                 <ul class="icons--header">
                     <li class="icon--header ">
-                        <img src="./assets/Icons/linkedin.svg" alt="likedin" class="likedin icon">
+                        <a href="https://www.linkedin.com/in/ricardo-salazar-b9bb13227/" target="_blank">
+                            <img src="./assets/Icons/linkedin.svg" alt="likedin" class="likedin icon"></a>
                     </li>
                     <li class="icon--header ">
-                        <img src="./assets/Icons/instagram.svg" alt="instagram" class="Instagram icon">    
+                        <a href="https://docs.google.com/document/d/1O9x7F1yHIl75GTrw-Iw8clx_Ydbfrm6cFO8uMdj1h3w/edit?usp=sharing" target="blank">
+                            <img src="./assets/Icons/cv.svg" alt="instagram" class="Instagram icon">
+                        </a>
                     </li>
                     <li class="icon--header ">
-                        <img src="./assets/Icons/Group 49.svg" alt="twitter" class="twitter icon">
+                        <a href="" target="_blank">
+                            <img src="./assets/Icons/Group 49.svg" alt="twitter" class="twitter icon">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +70,9 @@
     <div class="Acerca-de-mi section">
         <div>
             <h2 class="subtitle">Acerca de mí</h2>
-            <p class="info-personal">Soy un estudiante de ingeniería en sistemas computacionales, con un gran interés en desarrollo web. Con capacidad para aprender y aplicar mis conocimientos al ámbito profesional. En busca de una oportunidad laboral en la que desarrollar mis habilidades y adquirir experiencia.
+            <p class="info-personal">Soy un proogramador JR que estudia ingeniería en sistemas computacionales, con un gran interés en
+                desarrollo web. Con capacidad para aprender y aplicar mis conocimientos al ámbito profesional. En busca
+                de una oportunidad laboral en la que desarrollar mis habilidades y adquirir experiencia.
 
             </p>
         </div>
@@ -77,31 +85,45 @@
             <div class="skills wraper">
                 <div class="skill uno">
                     <img src="./assets/Icons/idea.png" alt="" class="logo--skill">
-                    <h3 class="title-skill">UX/UI Design</h3>
-                    <p class="skill-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim voluptatum iste iusto nobis amet, nihil magnam repellat molestiae?</p>    
+                    <h3 class="title-skill">Programación front-end</h3>
+                    <p class="skill-text">
+                        Conocimientos en RactJS, haciendo uso de tecnologias como redux, hook y react router.
+                    </p>
                 </div>
                 <div class="skill dos">
                     <img src="./assets/Icons/rule.png" alt="" class="logo--skill">
-                    <h3 class="title-skill">Product designer</h3>
-                    <p class="skill-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse itaque maiores omnis nisi excepturi fuga consequatur sint? Facere!</p>
+                    <h3 class="title-skill">Lenguajes de programación</h3>
+                    
+                    <ul class="skill-text">
+                        <p>Experiencia con lenguajes como:</p><br>
+                        <li>javascript</li>
+                        <li>java</li>
+                        <li>python</li>
+                        <li>c++</li>
+                    </ul>
                 </div>
                 <div class="skill tres">
                     <img src="./assets/Icons/smartphone.png" alt="" class="logo--skill">
-                    <h3 class="title-skill">Interactive Design</h3>
-                    <p class="skill-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam perspiciatis doloribus consequatur quod nostrum eos quo culpa voluptatem!</p>    
+                    <h3 class="title-skill">Otras tecnologias</h3>
+                    <ul class="skill-text">
+                        <p>Conocimientos en:</p><br>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Git</li>
+                    </ul>
                 </div>
                 <div class="skill cuatro">
                     <img src="./assets/Icons/smartphone.png" alt="" class="logo--skill">
-                    <h3 class="title-skill">Web Design</h3>
-                    <p class="skill-text">Lorem ipsum dolor sit, amet consectetur sadipisicing elit. Eum harum recusandae adipisci beatae rem veniam rerum consequatur esse.</p>    
+                    <h3 class="title-skill">Diseño de bases de datos.</h3>
+                    <p class="skill-text">Experiencia en maquetado y administracion de bases de datos SQL.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="experiencia section">
+    <!-- <div class="experiencia section">
         <h2 class="subtitle">Experiencia</h2>
         <div class="experiencia-skills">
-            
+
             <div class="experiencia--contenedor uno">
                 <img src="./assets/Icons/amazon.svg" alt="">
                 <div class="xp-txt">
@@ -130,20 +152,23 @@
                 <h4 class="Experiencia-time">2 años</h4>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="portafolio section">
-        <div class="Fitness-app project">
-            <img src="./assets/img/image 10.png" alt="Fitness app">
-            <h4>Fitness app</h4>
-        </div>
+            <div class="Fitness-app project">
+                <img src="./assets/img/pokedex.png" alt="Fitness app">
+                <h4>Pokedex</h4>
+            </div>
+
         <div class="portafolio-text">
             <h2 class="sub-white">Portafolio</h2>
-            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum optio molestiae tempore iure nisi perferendis aliquid maiores suscipit.</p>
+            <p class="text-white">Estos son dos de los proyectos mas destacables que he realizado, ambos estan desarrollados con reactJS, redux y react router.</p>
         </div>
-        <div class="Management-app project">
-            <img src="./assets/img/Rectangle 44.png" alt="Management app">
-            <h4>Management app</h4>
-        </div>
+
+            <div class="Management-app project">
+                <img src="./assets/img/ecommerce.png" alt="Management app">
+                <h4>e-commerce</h4>
+            </div>
+
     </div>
     <footer class="contacto section">
         <h2 class="subtitle">Contacto</h2>
@@ -162,4 +187,5 @@
         </div>
     </footer>
 </body>
+
 </html>
